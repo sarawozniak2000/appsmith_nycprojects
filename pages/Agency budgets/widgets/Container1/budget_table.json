@@ -1,0 +1,284 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 60,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "id",
+    "sagencyacro",
+    "calendar_year",
+    "budget"
+  ],
+  "columnSizeMap": {
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "columnUpdatedAt": 1755658389480,
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": "0",
+  "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "buttonColor": "#DD4B34",
+      "buttonLabel": "{{budget_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "menuColor": "#03B365",
+      "onClick": "{{showModal('Delete_Modal')}}",
+      "width": 150
+    }
+  },
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "derivedColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.sagencyacro.computedValue"
+    },
+    {
+      "key": "primaryColumns.calendar_year.computedValue"
+    },
+    {
+      "key": "primaryColumns.budget.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onSort"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "enableServerSideFiltering": false,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": false,
+  "isVisibleFilters": false,
+  "isVisiblePagination": false,
+  "isVisibleSearch": false,
+  "key": "zba5qel0au",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "onPageChange": "{{SelectQuery.run()}}",
+  "onSearchTextChanged": "{{SelectQuery.run()}}",
+  "onSort": "{{SelectQuery.run()}}",
+  "parentColumnSpace": 16.3125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "primaryColumnId": "id",
+  "primaryColumns": {
+    "budget": {
+      "alias": "budget",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "currency",
+      "computedValue": "{{(() => { const tableData = budget_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"budget\"])) : budget })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "budget",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Budget",
+      "notation": "standard",
+      "originalId": "budget",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "calendar_year": {
+      "alias": "calendar_year",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = budget_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"calendar_year\"])) : calendar_year })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "calendar_year",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Year",
+      "notation": "standard",
+      "originalId": "calendar_year",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "id": {
+      "alias": "id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = budget_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id\"])) : id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "id",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "id",
+      "notation": "standard",
+      "originalId": "id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "sagencyacro": {
+      "alias": "sagencyacro",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = budget_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"sagencyacro\"])) : sagencyacro })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "sagencyacro",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "sagencyacro",
+      "notation": "standard",
+      "originalId": "sagencyacro",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 24,
+  "searchKey": "",
+  "serverSidePaginationEnabled": false,
+  "tableData": "{{SelectQuery.data}}",
+  "textSize": "0.875rem",
+  "topRow": 15,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "hpy3pb4xft",
+  "widgetName": "budget_table"
+}

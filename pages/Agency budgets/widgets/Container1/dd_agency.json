@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilterUpdate"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "rooo6kvlxj",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Agency",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onFilterUpdate": "{{\n            Select_public_agency_budgets1.run();\n            \n          }}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 12.00830078125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n  [...new Set(Select_public_agency_budgets1.data.map(row => row.sagencyacro))]\n    .map(val => ({ label: val, value: val }))\n}}\n\n",
+  "topRow": 7,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "klu2odzabu",
+  "widgetName": "dd_agency"
+}

@@ -1,0 +1,5 @@
+UPDATE public."agency_budgets" SET
+		"sagencyacro" = '{{update_form.fieldState.sagencyacro.isVisible ? update_form.formData.sagencyacro : update_form.sourceData.sagencyacro}}',
+		"calendar_year" = '{{update_form.fieldState.calendar_year.isVisible ? update_form.formData.calendar_year : update_form.sourceData.calendar_year}}',
+    "budget" = '{{update_form.fieldState.budget.isVisible ? update_form.formData.budget : update_form.sourceData.budget}}'
+WHERE "id" = {{budget_table.selectedRow.id}};

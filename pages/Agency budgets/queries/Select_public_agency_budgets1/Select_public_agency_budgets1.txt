@@ -1,0 +1,6 @@
+SELECT
+  *
+FROM
+  public.agency_budgets
+WHERE
+  "sagencyacro" ilike '%{{dd_agency.filterText}}%'
