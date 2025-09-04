@@ -28,12 +28,12 @@
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "rightColumn": 54,
-  "text": "Departmental Budget Overview",
+  "text": "NYC Public Planned Projects Overview",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "urzv99hdc8",
-  "widgetName": "title"
+  "widgetName": "Text16"
 }

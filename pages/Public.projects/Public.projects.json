@@ -1,12 +1,11 @@
 {
-  "gitSyncId": "68a5284dc9e58c28b6524849_32195ad8-a0c8-4084-8b4a-425d76282a80",
+  "gitSyncId": "68a5284dc9e58c28b6524849_b0cdb994-c077-47e7-b687-13bf13b428a7",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 910,
+          "bottomRow": 1180,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Agency budgets",
-    "slug": "agency-budgets"
+    "name": "Public.projects",
+    "slug": "public-projects"
   }
 }

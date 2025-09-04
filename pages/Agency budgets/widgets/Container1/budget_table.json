@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 60,
+  "bottomRow": 52,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -22,17 +22,17 @@
     }
   },
   "columnOrder": [
-    "id",
-    "sagencyacro",
     "calendar_year",
-    "budget"
+    "budget",
+    "id",
+    "sagencyacro"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1755658389480,
+  "columnUpdatedAt": 1755743052527,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -122,7 +122,7 @@
   "key": "zba5qel0au",
   "label": "Data",
   "labelTextSize": "0.875rem",
-  "leftColumn": 1,
+  "leftColumn": 38,
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
@@ -269,12 +269,12 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 24,
+  "rightColumn": 60,
   "searchKey": "",
   "serverSidePaginationEnabled": false,
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
-  "topRow": 15,
+  "topRow": 7,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 3,

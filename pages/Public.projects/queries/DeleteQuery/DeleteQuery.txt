@@ -1,0 +1,2 @@
+DELETE FROM public."projects"
+  WHERE "autoid" = {{data_table.triggeredRow.autoid}};

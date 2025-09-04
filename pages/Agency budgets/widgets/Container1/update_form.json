@@ -5,7 +5,7 @@
   "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 86,
+  "bottomRow": 87,
   "bottomRowBeforeCollapse": 86,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
@@ -180,14 +180,14 @@
   "isVisible": "{{!!budget_table.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 45,
+  "leftColumn": 38,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
   "originalBottomRow": 86,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
-  "parentId": "0",
+  "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetButtonLabel": "Reset",
@@ -197,7 +197,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
   },
-  "rightColumn": 64,
+  "rightColumn": 60,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -226,7 +226,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "budget",
           "position": 2,
-          "sourceData": 1618621440
+          "sourceData": 172475008
         },
         "calendar_year": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -243,7 +243,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Calendar Year",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "calendar_year",
@@ -304,7 +304,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update {{budget_table.selectedRow.calendar_year}} budget: ",
-  "topRow": 0,
+  "topRow": 53,
   "topRowBeforeCollapse": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,

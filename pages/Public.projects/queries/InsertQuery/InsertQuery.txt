@@ -1,0 +1,28 @@
+INSERT INTO public."projects" (
+	"autoid",
+	"plancommdate",
+	"ccpversion",
+	"magency",
+	"projectid",
+	"maprojid",
+	"budgetline",
+	"projecttype",
+	"sagencyacro",
+	"sagencyname",
+	"projectdescription",
+	"commitmentdescription"
+)
+VALUES (
+	'{{insert_form.formData.autoid}}',
+	'{{insert_form.formData.plancommdate}}',
+	'{{insert_form.formData.ccpversion}}',
+	'{{insert_form.formData.magency}}',
+	'{{insert_form.formData.projectid}}',
+	'{{insert_form.formData.maprojid}}',
+	'{{insert_form.formData.budgetline}}',
+	'{{insert_form.formData.projecttype}}',
+	'{{insert_form.formData.sagencyacro}}',
+	'{{insert_form.formData.sagencyname}}',
+	'{{insert_form.formData.projectdescription}}',
+	'{{insert_form.formData.commitmentdescription}}'
+);
