@@ -1,0 +1,1 @@
+UPDATE public.scenarios SET budget_rollover = 0;

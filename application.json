@@ -37,6 +37,10 @@
     {
       "id": "Projects",
       "isDefault": false
+    },
+    {
+      "id": "Analysis and Projections",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
