@@ -1,6 +1,6 @@
 {
   "gitSyncId": "68a5284dc9e58c28b6524849_0aef09cb-c101-471d-8494-0265675379c2",
-  "id": "Public.projects_InsertQuery",
+  "id": "Projects_InsertQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "InsertQuery",
-    "pageId": "Public.projects",
+    "pageId": "Projects",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
